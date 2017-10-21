@@ -10,4 +10,5 @@
     <string name="title_activity_swipe_to_dismiss">SwipeToDismiss</string>
     <string name="title_activity_grid_view_animation">GridViewAnimation</string>
     <string name="gridview_animation">Gridview Animation</string>
+    <string name="swipe_to_dismiss">swipe to dismiss</string>
 </resources>

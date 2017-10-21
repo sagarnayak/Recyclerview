@@ -41,7 +41,7 @@ public class SwipeToDismiss extends AppCompatActivity implements SwipeDismissIte
          */
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         /*
-        create dataset for the adaper
+        create dataset for the adapter
          */
         data = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
