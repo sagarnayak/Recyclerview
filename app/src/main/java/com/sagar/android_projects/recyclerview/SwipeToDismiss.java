@@ -67,8 +67,30 @@ public class SwipeToDismiss extends AppCompatActivity implements SwipeDismissIte
     this will be called when any item is swiped.
      */
     @Override
-    public void swiped(int position) {
+    public void swiped(final int position) {
         data.remove(position);
         adapter.notifyItemRemoved(position);
+
+        /*
+        to get back the swiped view to its place again. call the notifyItemChanged for the adapter
+        and pass the position to that function.
+        this will restore the view to its place.
+         */
+        /*new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            adapter.notifyItemChanged(position);
+                        }
+                    });
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();*/
     }
 }
